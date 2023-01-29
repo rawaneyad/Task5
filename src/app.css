@@ -1,0 +1,66 @@
+.App {
+  padding: 1.64em;
+  background-color: #f2f5f9;
+}
+.App .ant-typography {
+  margin-top: 0em;
+  gap: 83px;
+}
+.App .ant-row .ant-col {
+  background-color: white;
+  border-radius: 0.5em;
+}
+.App .ant-row .leftSide .leftSideHeader {
+  display: flex;
+  justify-content: space-between;
+}
+.App .ant-row .leftSide .leftSideHeader .titleHeader {
+  padding-left: 1em;
+}
+.App .ant-row .leftSide .leftSideHeader .iconHeader {
+  margin-right: 1em;
+}
+.App .ant-row .leftSide .ant-space .ant-space-item .ant-typography {
+  margin-top: 1em;
+}
+.App .ant-row .leftSide .ant-space .ant-space-item .anticon svg {
+  color: #737373;
+  font-size: 1.5em;
+}
+.App .ant-row .leftSide .ant-space .ant-space-item .ant-input-group-wrapper {
+  margin-left: 1em;
+  border-radius: 50px;
+  background-color: #fafafb;
+}
+.App .ant-row .leftSide .ant-space .ant-space-item .ant-input-group-wrapper .ant-input {
+  background-color: #fafafb;
+  border-radius: 50px;
+  border: 0;
+}
+.App .ant-row .leftSide .ant-space .ant-space-item .ant-input-group-wrapper .ant-input-group-addon {
+  border-radius: 50px;
+  background-color: #fafafb;
+}
+.App .ant-row .leftSide .ant-space .ant-space-item .ant-input-group-wrapper .ant-input-group-addon .ant-btn {
+  background-color: #5773cc;
+  border-radius: 50px;
+}
+.App .ant-row .leftSide .ant-space .ant-space-item .ant-input-group-wrapper .ant-input-group-addon .ant-btn .anticon svg {
+  color: white;
+  font-size: 1em;
+}
+.App .ant-row .leftSide .ant-tabs {
+  width: 100%;
+}
+.App .ant-row .leftSide .ant-tabs .ant-tabs-nav {
+  padding-left: 2em;
+}
+.App .ant-row .leftSide .ant-tabs .ant-tabs-nav .ant-tabs-tab {
+  width: 50%;
+}
+.App .ant-row .leftSide .ant-tabs .ant-list-item-meta-title {
+  margin: 4px;
+}
+.App .ant-row .main {
+  margin-left: 2em;
+}/*# sourceMappingURL=App.css.map */

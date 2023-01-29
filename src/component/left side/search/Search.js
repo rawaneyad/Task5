@@ -1,9 +1,12 @@
-import React from 'react'
-
+import { Input, Space } from 'antd';
+import React from "react";
+const { Search } = Input;
 const search = () => {
   return (
-    <div>search</div>
-  )
-}
+    <Space>
+      <Search className='search' placeholder="Search"  />
+    </Space>
+  );
+};
 
-export default search
+export default search;

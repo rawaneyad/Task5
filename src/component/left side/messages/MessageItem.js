@@ -1,8 +1,23 @@
 import React from 'react'
+import { Avatar, List } from 'antd';
 
-const MessageItem = () => {
+const MessageItem = ({contactList}) => {
   return (
-    <div>MessageItem</div>
+    <List
+    itemLayout="horizontal"
+    dataSource={contactList}
+    renderItem={(item) => (
+      <List.Item>
+        <List.Item.Meta
+          avatar={<Avatar src={item.image} />}
+          title={item.name}
+          description={item.last_message}
+        /><div>
+          {item.date}
+          </div>
+      </List.Item>
+    )}
+  />
   )
 }
 

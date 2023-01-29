@@ -1,1 +1,77 @@
+.App {
+  padding: 1.64em;
+  background-color: #f2f5f9;
+  .ant-typography {
+    margin-top: 0em;
+    gap: 83px;
+  }
+  .ant-row {
+    .ant-col {
+      background-color: white;
+      border-radius: 0.5em;
+    }
+    .leftSide {
+      .leftSideHeader {
+        display: flex;
+        justify-content: space-between;  
+        .titleHeader{
+          padding-left: 1em;
+        }      
+        .iconHeader{
+          margin-right: 1em;
+        }
+      }
+      .ant-space {
+        .ant-space-item {
+          .ant-typography {
+            margin-top: 1em;
+          }
+          .anticon svg {
+            color: #737373;
+            font-size: 1.5em;
+          }
+          .ant-input-group-wrapper {
+            margin-left: 1em;
+            border-radius: 50px;
+            background-color: #fafafb;
+            // width: 17em;
 
+            .ant-input {
+              background-color: #fafafb;
+              border-radius: 50px;
+              border: 0;
+            }
+            .ant-input-group-addon {
+              border-radius: 50px;
+              background-color: #fafafb;
+
+              .ant-btn {
+                background-color: #5773cc;
+                border-radius: 50px;
+                .anticon svg {
+                  color: white;
+                  font-size: 1em;
+                }
+              }
+            }
+          }
+        }
+      }
+      .ant-tabs{
+        width: 100%;
+        .ant-tabs-nav{
+          padding-left: 2em;
+          .ant-tabs-tab{
+            width: 50%;
+          }
+        }
+        .ant-list-item-meta-title{
+          margin: 4px;
+        }
+      }
+    }
+    .main {
+      margin-left: 2em;
+    }
+  }
+}

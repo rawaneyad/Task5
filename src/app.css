@@ -63,4 +63,24 @@
 }
 .App .ant-row .main {
   margin-left: 2em;
+}
+.App .ant-row .main .mainHeader {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 1em;
+}
+.App .ant-row .main .mainHeader .titleHeader {
+  display: flex;
+  padding-left: 1em;
+}
+.App .ant-row .main .mainHeader .titleHeader .ant-avatar {
+  margin-right: 1em;
+  height: 4em;
+  width: 4em;
+}
+.App .ant-row .main .mainHeader .buttonHeader {
+  margin-right: 1em;
+}
+.App .ant-row .main .mainHeader .buttonHeader .ant-btn {
+  margin: 0.3em;
 }/*# sourceMappingURL=App.css.map */

@@ -1,12 +1,12 @@
 import Header from "./component/header/Header";
 import LeftSide from "./component/left side/LeftSide";
 import Main from "./component/main/Main";
-import { Col, Row } from 'antd';
-import './app.css';
+import { Col, Row } from "antd";
+import "./app.css";
 import React, { useState } from "react";
 
 function App() {
-  const [userSelect, setUserSelect] = useState(1)
+  const [userSelect, setUserSelect] = useState(1);
   const [contactList, setContactList] = useState([
     {
       user_id: 1,
@@ -27,7 +27,7 @@ function App() {
       name: "test3",
       last_message: "test last message",
       date: "26/01/2023",
-      image: "https://reqres.in/img/faces/4-image.jpg",
+      image: "https://reqres.in/img/faces/3-image.jpg",
     },
     {
       user_id: 4,
@@ -42,12 +42,15 @@ function App() {
   };
   return (
     <div className="App">
-      <Header/>
+      <Header />
       <Row>
-      <Col flex={2} className='leftSide'><LeftSide contactList={contactList} selectUser={selectUser}/></Col>
-      <Col flex={12}className='main'><Main/></Col>
-    </Row>
-      
+        <Col flex={2} className="leftSide">
+          <LeftSide contactList={contactList} selectUser={selectUser} />
+        </Col>
+        <Col flex={12} className="main">
+          <Main />
+        </Col>
+      </Row>
     </div>
   );
 }

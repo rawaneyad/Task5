@@ -82,5 +82,24 @@
   margin-right: 1em;
 }
 .App .ant-row .main .mainHeader .buttonHeader .ant-btn {
+  border-radius: 25px;
   margin: 0.3em;
+}
+.App .ant-row .main .mainMessage {
+  display: flex;
+  flex-direction: column;
+}
+.App .ant-row .main .mainMessage .titleMessage {
+  display: flex;
+  padding-left: 1em;
+}
+.App .ant-row .main .mainMessage .titleMessage .ant-avatar {
+  margin-right: 1em;
+  height: 4em;
+  width: 4em;
+}
+.App .ant-row .main .mainMessage .titleMessage .lastMessage {
+  background-color: #f6f8f9;
+  padding: 0.5em 20em 0.5em 1em;
+  border-radius: 25px;
 }/*# sourceMappingURL=App.css.map */

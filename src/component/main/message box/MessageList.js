@@ -1,8 +1,17 @@
 import React from 'react'
-
-const MessageList = () => {
+import { List } from "antd";
+import MessageBox from "./MessageBox"
+const MessageList = ({contactList}) => {
   return (
-    <div>MessageList</div>
+    <List
+    itemLayout="horizontal"
+    dataSource={contactList}
+    renderItem={(item) => (
+      <List.Item>
+        <MessageBox item={item}/>
+      </List.Item>
+    )}
+  />
   )
 }
 

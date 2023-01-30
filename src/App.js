@@ -48,7 +48,7 @@ function App() {
           <LeftSide contactList={contactList} selectUser={selectUser} />
         </Col>
         <Col flex={12} className="main">
-          <Main />
+          <Main contactList={contactList.filter((user)=>user.user_id===userSelect)} userSelect={userSelect}/>
         </Col>
       </Row>
     </div>

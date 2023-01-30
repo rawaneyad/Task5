@@ -2,10 +2,10 @@ import React from 'react'
 import Header from './header/Header'
 import MessageList from './message box/MessageList'
 
-const Main = () => {
+const Main = ({contactList, userSelect}) => {
   return (
     <div><Header/>
-    <MessageList/></div>
+    <MessageList contactList={contactList.filter((user)=>user.user_id===userSelect)}/></div>
   )
 }
 

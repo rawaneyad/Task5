@@ -1,7 +1,7 @@
 import React from 'react'
 import { Avatar, List } from 'antd';
 
-const MessageItem = ({contactList}) => {
+const MessageItem = ({contactList, selectUser}) => {
   return (
     <List
     itemLayout="horizontal"
@@ -10,7 +10,7 @@ const MessageItem = ({contactList}) => {
       <List.Item>
         <List.Item.Meta
           avatar={<Avatar src={item.image} />}
-          title={item.name}
+          title={<label onClick={()=>(selectUser(item.user_id))}>{item.name}</label>}
           description={item.last_message}
         /><div>
           {item.date}

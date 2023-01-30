@@ -3,7 +3,7 @@ import MessageItem from './MessageItem'
 
 const Sent = ({contactList, selectUser}) => {
   return (
-    <div>Sent
+    <div>
         <MessageItem contactList={contactList} selectUser={selectUser}/>
     </div>
   )

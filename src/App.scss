@@ -22,6 +22,7 @@
         }
       }
       .ant-space {
+        width: 100%;
         .ant-space-item {
           .ant-typography {
             margin-top: 1em;
@@ -64,6 +65,9 @@
             width: 50%;
           }
         }
+        .selectUser{
+          background-color: #5773cc;
+        }
         .ant-list-item-meta-title {
           margin: 4px;
         }
@@ -71,6 +75,11 @@
     }
     .main {
       margin-left: 2em;
+      // height: 100%;
+      .ant-space{
+        width: 100%;
+        
+      }
       .mainHeader {
         display: flex;
         justify-content: space-between;
@@ -110,6 +119,25 @@
             border-radius: 25px;
           }
         }
+        .dateMain{
+          position: absolute;
+          bottom: 0;
+          right: 1.5em;
+        }
+      }
+      .AddMessage {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        padding: 1em;
+        display: flex;
+        justify-content: space-between;
+        .ant-space-item{
+          width: 100%;
+        }
+        // .addMessageInput{
+          
+        // }
       }
     }
   }
@@ -136,10 +164,9 @@
   .ant-select-arrow {
     color: black;
   }
-  .ant-input{
+  .ant-input {
     background-color: #f4f7fa;
     border: 0;
-
   }
   .css-dev-only-do-not-override-1n7nwfa
     .ant-select-single:not(.ant-select-customize-input)

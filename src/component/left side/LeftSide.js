@@ -3,12 +3,12 @@ import Header from "./header/Header";
 import Messages from "./messages/Messages";
 import Search from "./search/Search";
 
-const LeftSide = ({ contactList, selectUser }) => {
+const LeftSide = ({ contactList, selectUser, userSelect}) => {
   return (
     <div>
       <Header />
       <Search />
-      <Messages contactList={contactList} selectUser={selectUser} />
+      <Messages contactList={contactList} selectUser={selectUser} userSelect={userSelect}/>
     </div>
   );
 };

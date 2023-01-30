@@ -2,7 +2,7 @@ import React from 'react'
 import Inbox from './Inbox'
 import Sent from './Sent'
 import { Tabs } from 'antd';
-const Messages = ({contactList,selectUser}) => {
+const Messages = ({contactList,selectUser,userSelect}) => {
   const onChange = (key) => {
     console.log(key);
   };
@@ -10,12 +10,12 @@ const Messages = ({contactList,selectUser}) => {
     {
       key: '1',
       label: `Inbox`,
-      children: (<Inbox contactList={contactList} selectUser={selectUser}/>),
+      children: (<Inbox contactList={contactList} selectUser={selectUser} userSelect={userSelect}/>),
     },
     {
       key: '2',
       label: `Sent`,
-      children: (<Sent contactList={contactList} selectUser={selectUser}/>),
+      children: (<Sent contactList={contactList} selectUser={selectUser} userSelect={userSelect}/>),
     },
   ];
   return (

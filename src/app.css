@@ -20,6 +20,9 @@
 .App .ant-row .leftSide .leftSideHeader .iconHeader {
   margin-right: 1em;
 }
+.App .ant-row .leftSide .ant-space {
+  width: 100%;
+}
 .App .ant-row .leftSide .ant-space .ant-space-item .ant-typography {
   margin-top: 1em;
 }
@@ -58,11 +61,17 @@
 .App .ant-row .leftSide .ant-tabs .ant-tabs-nav .ant-tabs-tab {
   width: 50%;
 }
+.App .ant-row .leftSide .ant-tabs .selectUser {
+  background-color: #5773cc;
+}
 .App .ant-row .leftSide .ant-tabs .ant-list-item-meta-title {
   margin: 4px;
 }
 .App .ant-row .main {
   margin-left: 2em;
+}
+.App .ant-row .main .ant-space {
+  width: 100%;
 }
 .App .ant-row .main .mainHeader {
   display: flex;
@@ -102,6 +111,22 @@
   background-color: #f6f8f9;
   padding: 0.5em 20em 0.5em 1em;
   border-radius: 25px;
+}
+.App .ant-row .main .mainMessage .dateMain {
+  position: absolute;
+  bottom: 0;
+  right: 1.5em;
+}
+.App .ant-row .main .AddMessage {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  padding: 1em;
+  display: flex;
+  justify-content: space-between;
+}
+.App .ant-row .main .AddMessage .ant-space-item {
+  width: 100%;
 }
 
 .ant-modal .ant-modal-close-x .anticon {

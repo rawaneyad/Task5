@@ -102,4 +102,31 @@
   background-color: #f6f8f9;
   padding: 0.5em 20em 0.5em 1em;
   border-radius: 25px;
+}
+
+.ant-modal .ant-modal-close-x .anticon {
+  background-color: #5773cc;
+  border-radius: 50px;
+  color: white;
+  padding: 0.3em;
+}
+.ant-modal .ant-typography {
+  margin: 0;
+}
+.ant-modal .ant-divider {
+  margin: 0.1em;
+}
+.ant-modal .ant-btn {
+  width: 100%;
+}
+.ant-modal .ant-select-arrow {
+  color: black;
+}
+.ant-modal .ant-input {
+  background-color: #f4f7fa;
+  border: 0;
+}
+.ant-modal .css-dev-only-do-not-override-1n7nwfa .ant-select-single:not(.ant-select-customize-input) .ant-select-selector {
+  background-color: #f4f7fa;
+  border: 0;
 }/*# sourceMappingURL=App.css.map */

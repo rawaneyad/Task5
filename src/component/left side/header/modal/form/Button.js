@@ -1,9 +1,13 @@
-import React from 'react'
-
-const Button = () => {
+import React from "react";
+import { Button, Form } from "antd";
+const ButtonFun = () => {
   return (
-    <div>Button</div>
-  )
-}
+    <Form.Item>
+      <Button type="primary" htmlType="submit">
+        Send Message
+      </Button>
+    </Form.Item>
+  );
+};
 
-export default Button
+export default ButtonFun;

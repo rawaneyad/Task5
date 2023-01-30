@@ -1,11 +1,22 @@
-import React from 'react'
-import Form from './form/Form'
-import Header from './Header'
+import React from "react";
+import Form from "./form/Form";
+import Header from "./Header";
+import { Modal } from "antd";
 
-const Modal = () => {
+const ModalFun = ({open, handleCancel}) => {
   return (
-    <div><Header/><Form/></div>
-  )
-}
+    <>
+      <Modal
+      className="modal"
+        open={open}
+        title={<Header />}
+        footer={null}
+        onCancel={handleCancel}
+      >
+        <Form />
+      </Modal>
+    </>
+  );
+};
 
-export default Modal
+export default ModalFun;

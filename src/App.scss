@@ -96,7 +96,7 @@
         display: flex;
         flex-direction: column;
 
-        .titleMessage{
+        .titleMessage {
           display: flex;
           padding-left: 1em;
           .ant-avatar {
@@ -106,13 +106,45 @@
           }
           .lastMessage {
             background-color: #f6f8f9;
-            // background-color: #5773cc;
             padding: 0.5em 20em 0.5em 1em;
             border-radius: 25px;
           }
         }
-        
       }
     }
+  }
+}
+
+.ant-modal {
+  .ant-modal-close-x {
+    .anticon {
+      background-color: #5773cc;
+      border-radius: 50px;
+      color: white;
+      padding: 0.3em;
+    }
+  }
+  .ant-typography {
+    margin: 0;
+  }
+  .ant-divider {
+    margin: 0.1em;
+  }
+  .ant-btn {
+    width: 100%;
+  }
+  .ant-select-arrow {
+    color: black;
+  }
+  .ant-input{
+    background-color: #f4f7fa;
+    border: 0;
+
+  }
+  .css-dev-only-do-not-override-1n7nwfa
+    .ant-select-single:not(.ant-select-customize-input)
+    .ant-select-selector {
+    background-color: #f4f7fa;
+    border: 0;
   }
 }

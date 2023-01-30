@@ -1,10 +1,18 @@
 import { Space, Typography, Divider } from "antd";
-import React from "react";
-// import Modal from "./modal/Modal";
+import React, {useState} from "react";
+import Modal from "./modal/Modal";
 import { FormOutlined, InboxOutlined, SettingFilled  } from '@ant-design/icons';
 
 const { Text, Title } = Typography;
 const Header = () => {
+  const [open, setOpen] = useState(false);
+  const showModal = () => {
+    setOpen(true);
+  };
+
+  const handleCancel = () => {
+    setOpen(false);
+  };
   return (
     <div>
       <Space className="leftSideHeader" size="small">
@@ -13,12 +21,11 @@ const Header = () => {
           <Text type="secondary" >Show Message</Text>
         </div>
        <div className="iconHeader">
-        <FormOutlined /><InboxOutlined /><SettingFilled />
+        <FormOutlined onClick={() => showModal()}  /><InboxOutlined /><SettingFilled />
         </div> 
       </Space>
       <Divider />
-      {/* LeftSide Header */}
-      {/* <Modal /> */}
+      <Modal open={open} handleCancel={handleCancel} />
     </div>
   );
 };

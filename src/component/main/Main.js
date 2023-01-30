@@ -5,7 +5,7 @@ import MessageForm from "./add message form/MessageForm";
 const Main = ({ contactList, userSelect }) => {
   return (
     <div>
-      <Header />
+      <Header contactList={contactList.filter((user) => user.user_id === userSelect)}/>
       <MessageList
         contactList={contactList.filter((user) => user.user_id === userSelect)}
       />

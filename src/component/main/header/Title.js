@@ -4,15 +4,15 @@ import { Avatar } from "antd";
 
 const { Text, Title } = Typography;
 
-const TitleMain = () => {
+const TitleMain = ({contactList}) => {
   return (
     <>
       <div>
-        <Avatar src="https://reqres.in/img/faces/5-image.jpg" />
+        <Avatar src={contactList[0].image} />
       </div>
       <div>
-        <Title level={5}>Messages</Title>
-        <Text type="secondary">Show Message</Text>
+        <Title level={5}>{contactList[0].name}</Title>
+        <Text type="secondary">{contactList[0].type}</Text>
       </div>
     </>
   );

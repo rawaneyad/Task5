@@ -14,6 +14,7 @@ function App() {
       last_message: "test last message",
       date: "26/01/2023",
       image: "https://reqres.in/img/faces/1-image.jpg",
+      type: "Trainer"
     },
     {
       user_id: 2,
@@ -21,6 +22,7 @@ function App() {
       last_message: "test last message",
       date: "26/01/2023",
       image: "https://reqres.in/img/faces/2-image.jpg",
+      type: "Trainer"
     },
     {
       user_id: 3,
@@ -28,6 +30,7 @@ function App() {
       last_message: "test last message",
       date: "26/01/2023",
       image: "https://reqres.in/img/faces/3-image.jpg",
+      type: "Trainer"
     },
     {
       user_id: 4,
@@ -35,6 +38,7 @@ function App() {
       last_message: "test last message",
       date: "26/01/2023",
       image: "https://reqres.in/img/faces/4-image.jpg",
+      type: "Trainer"
     },
   ]);
   const selectUser = (id) => {

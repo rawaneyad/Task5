@@ -9,14 +9,20 @@ const MessageBox = ({ item }) => {
       <Space className="mainMessage" size="small">
         <div className="titleMessage">
           <div>
-            <Avatar src={item.image} />
+            <Avatar
+              src={
+                item.image
+                  ? item.image
+                  : "https://reqres.in/img/faces/7-image.jpg"
+              }
+            />
           </div>
           <div>
             <Title level={5}>{item.name}</Title>
-            <Text  className="lastMessage">{item.last_message}</Text>
+            <Text className="lastMessage">{item.last_message}</Text>
+            <Text className="dateMain">{item.date}</Text>
           </div>
         </div>
-        <div className="dateMain">{item.date}</div>
       </Space>
     </div>
   );

@@ -113,11 +113,6 @@
   padding: 0.5em 20em 0.5em 1em;
   border-radius: 25px;
 }
-.App .ant-row .main .mainMessage .dateMain {
-  position: absolute;
-  bottom: 0;
-  right: 1.5em;
-}
 .App .ant-row .main .AddMessage {
   position: absolute;
   bottom: 0;

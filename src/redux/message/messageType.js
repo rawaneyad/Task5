@@ -1,0 +1,2 @@
+export const ADD_MESSAGE ="ADD_MESSAGE"
+export const CHANGE_INPUT ="CHANGE_INPUT"

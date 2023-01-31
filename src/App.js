@@ -5,7 +5,7 @@ import LeftSide from "./component/left side/LeftSide";
 import Main from "./component/main/Main";
 import { Col, Row } from "antd";
 import "./app.css";
-import React, { useState } from "react";
+import React from "react";
 function App() {
   
   return (

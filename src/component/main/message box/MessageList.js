@@ -1,11 +1,15 @@
 import React from 'react'
 import { List } from "antd";
 import MessageBox from "./MessageBox"
-const MessageList = ({contactList}) => {
+import { useSelector } from "react-redux";
+
+const MessageList = () => {
+  const { userSelect} = useSelector((state) => state.contactList);
+
   return (
     <List
     itemLayout="horizontal"
-    dataSource={contactList}
+    dataSource={userSelect}
     renderItem={(item) => (
       <List.Item>
         <MessageBox item={item}/>

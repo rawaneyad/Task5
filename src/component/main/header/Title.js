@@ -1,18 +1,20 @@
 import React from "react";
 import { Typography } from "antd";
 import { Avatar } from "antd";
+import { useSelector } from "react-redux";
 
 const { Text, Title } = Typography;
 
-const TitleMain = ({contactList}) => {
+const TitleMain = () => {
+  const { userSelect} = useSelector((state) => state.contactList);
   return (
     <>
       <div>
-        <Avatar src={contactList[0].image} />
+        <Avatar src={userSelect[0].image} />
       </div>
       <div>
-        <Title level={5}>{contactList[0].name}</Title>
-        <Text type="secondary">{contactList[0].type}</Text>
+        <Title level={5}>{userSelect[0].name}</Title>
+        <Text type="secondary">{userSelect[0].type}</Text>
       </div>
     </>
   );

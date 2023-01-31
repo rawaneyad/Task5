@@ -1,10 +1,10 @@
 import React from "react";
 import MessageItem from "./MessageItem";
 
-const Inbox = ({contactList, selectUser, userSelect}) => {
+const Inbox = () => {
   return (
     <div>
-      <MessageItem contactList={contactList} selectUser={selectUser}userSelect={userSelect}/>
+      <MessageItem />
     </div>
   );
 };

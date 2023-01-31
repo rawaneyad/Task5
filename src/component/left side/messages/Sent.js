@@ -1,10 +1,10 @@
 import React from 'react'
 import MessageItem from './MessageItem'
 
-const Sent = ({contactList, selectUser, userSelect}) => {
+const Sent = () => {
   return (
     <div>
-        <MessageItem contactList={contactList} selectUser={selectUser}userSelect={userSelect}/>
+        <MessageItem />
     </div>
   )
 }

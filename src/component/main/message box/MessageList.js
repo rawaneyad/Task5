@@ -11,16 +11,7 @@ const MessageList = () => {
     <>
       <List
         itemLayout="horizontal"
-        dataSource={userSelect}
-        renderItem={(item) => (
-          <List.Item>
-            <MessageBox item={item} />
-          </List.Item>
-        )}
-      />
-      <List
-        itemLayout="horizontal"
-        dataSource={messages.filter(item=>item.user_id===userSelect[0].user_id)}
+        dataSource={userSelect.concat(messages.filter(item=>item.user_id===userSelect[0].user_id))}
         renderItem={(item) => (
           <List.Item>
             <MessageBox item={item} />

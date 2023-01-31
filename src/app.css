@@ -63,6 +63,7 @@
 }
 .App .ant-row .leftSide .ant-tabs .selectUser {
   background-color: #5773cc;
+  color: white;
 }
 .App .ant-row .leftSide .ant-tabs .ant-list-item-meta-title {
   margin: 4px;
